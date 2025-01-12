@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OnDwings"
+        tools:targetApi="31">
+        <activity
+            android:name=".dailysales"
+            android:exported="false" />
+        <activity
+            android:name=".weeklysales"
+            android:exported="false" />
+        <activity
+            android:name=".monthlysales"
+            android:exported="false" />
+        <activity
+            android:name=".yearlysales"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".menuinv"
+            android:exported="false" />
+        <activity
+            android:name=".Queue"
+            android:exported="false" />
+        <activity
+            android:name=".Sales"
+            android:exported="false" />
+        <activity
+            android:name=".coffeeprd"
+            android:exported="false" />
+        <activity
+            android:name=".coffeerecy"
+            android:exported="false" />
+        <activity
+            android:name=".coffeeinv"
+            android:exported="false" />
+        <activity
+            android:name=".coffeeee"
+            android:exported="false" />
+        <activity
+            android:name=".About"
+            android:exported="false" />
+        <activity
+            android:name=".saleshistorycoffee"
+            android:exported="false" />
+        <activity
+            android:name=".loginJ"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

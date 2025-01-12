@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/headerView"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-2dp"
+        android:background="#36454F" />
+    
+    <ImageView
+        android:id="@+id/searchButton"
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-4dp"
+        android:layout_marginEnd="0dp"
+        android:padding="12dp"
+        android:src="@drawable/bbclogo4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerView"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Spinner
+            android:id="@+id/categorySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:minHeight="48dp"/>
+
+        <EditText
+            android:id="@+id/productnameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Coffee Name"
+            android:layout_marginTop="8dp"
+            android:minHeight="48dp"/>
+
+        <EditText
+            android:id="@+id/pricetallEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tall Price"
+            android:layout_marginTop="8dp"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"/>
+
+        <EditText
+            android:id="@+id/pricegrandeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Grande Price"
+            android:layout_marginTop="8dp"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"/>
+
+        <CheckBox
+            android:id="@+id/addonsCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable Add-ons"
+            android:layout_marginTop="16dp"/>
+
+        <LinearLayout
+            android:id="@+id/addonsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Available Add-ons"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/addNewAddonButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add New Add-on"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/white"
+                android:background="@drawable/btns2"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:id="@+id/addonsListContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"/>
+
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/white"
+                android:background="@drawable/btns2"/>
+
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/white"
+                android:background="@drawable/btns2"/>
+
+            <Button
+                android:id="@+id/swithtomenuEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Switch"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/white"
+                android:background="@drawable/btns2"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

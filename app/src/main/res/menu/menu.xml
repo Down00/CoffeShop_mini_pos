@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="menu">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/navhome"
+            android:fontFamily="@font/groteskmed"
+            android:title="Home" />
+        <item
+            android:id="@+id/menu"
+            android:icon="@drawable/menu1"
+            android:fontFamily="@font/groteskmed"
+            android:title="Menu" />
+        <item
+            android:id="@+id/invent"
+            android:title="Menu Manager"
+            android:fontFamily="@font/groteskmed"
+            android:icon="@drawable/salesp"/>
+        <item
+            android:id="@+id/sales"
+            android:title="Sales"
+            android:fontFamily="@font/groteskmed"
+            android:icon="@drawable/salest"/>
+        <item
+            android:id="@+id/queue"
+            android:title="Queue"
+            android:fontFamily="@font/groteskmed"
+            android:icon="@drawable/ticket"/>
+    </group>
+    <item
+        android:title="About">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/aboutttt"
+                android:fontFamily="@font/groteskmed"
+                android:title="About"/>
+        </menu>
+    </item>
+    <item
+        android:title="Logout">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout_l"
+                android:fontFamily="@font/groteskmed"
+                android:title="Logout"/>
+        </menu>
+    </item>
+</menu>

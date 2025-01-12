@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">BBC R.</string>
+    <string name="col_1">Order no.</string>
+    <string name="col_2">Dates </string>
+    <string name="col_3">No. Items</string>
+    <string name="col_4">Price</string>
+    <string name="hs_1">Recent</string>
+    <string name="hs_2">Last week</string>
+    <string name="hs_3">Last month</string>
+    <string name="hs_4">This year</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+
+    <string-array name="coffee_sizes">
+        <item>Tall</item>
+        <item>Grande</item>
+    </string-array>
+
+</resources>
